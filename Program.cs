@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Threading;
+// using rockpaperscissors_csharp.Models;
+
 
 namespace rockpaperscissors_csharp
 {
@@ -15,6 +17,7 @@ namespace rockpaperscissors_csharp
       Console.Clear();
       Console.WriteLine("What is your name?");
       string player = Console.ReadLine();
+
 
       Console.WriteLine("Would you like to play Rock Paper Scissors?");
       string start = Console.ReadLine().ToLower();
@@ -40,19 +43,48 @@ namespace rockpaperscissors_csharp
               Console.WriteLine("My choice was SCISSORS");
               Console.WriteLine("You Win! Good Job " + player);
               playerScore++;
-
+              Console.WriteLine(player + ": " + playerScore);
+              Console.WriteLine(compScore + ": " + compScore);
+              Console.WriteLine("Ties : " + tieGame);
+              Console.WriteLine("Would you like to play again?");
+              string finalAns = Console.ReadLine().ToLower();
+              Console.Clear();
+              if (finalAns == "no" || finalAns == "n")
+              {
+                done = true;
+              }
             }
             else if (choice == genRAnd)
             {
               Console.WriteLine("My choice was ROCK, also");
               Console.WriteLine("We tied!" + player);
               tieGame++;
+              Console.WriteLine(player + ": " + playerScore);
+              Console.WriteLine(compScore + ": " + compScore);
+              Console.WriteLine("Ties : " + tieGame);
+              Console.WriteLine("Would you like to play again?");
+              string finalAns = Console.ReadLine().ToLower();
+              Console.Clear();
+              if (finalAns == "no" || finalAns == "n")
+              {
+                done = true;
+              }
             }
             else
             {
               Console.WriteLine("My choice was PAPER, I win");
               Console.WriteLine("Better luck next time!" + player);
               compScore++;
+              Console.WriteLine(player + ": " + playerScore);
+              Console.WriteLine(compScore + ": " + compScore);
+              Console.WriteLine("Ties : " + tieGame);
+              Console.WriteLine("Would you like to play again?");
+              string finalAns = Console.ReadLine().ToLower();
+              Console.Clear();
+              if (finalAns == "no" || finalAns == "n")
+              {
+                done = true;
+              }
             }
           }
           else if (selection == "paper")
@@ -65,18 +97,48 @@ namespace rockpaperscissors_csharp
               Console.WriteLine("My choice was ROCK");
               Console.WriteLine("You Win! Good Job " + player);
               playerScore++;
+              Console.WriteLine(player + ": " + playerScore);
+              Console.WriteLine(compScore + ": " + compScore);
+              Console.WriteLine("Ties : " + tieGame);
+              Console.WriteLine("Would you like to play again?");
+              string finalAns = Console.ReadLine().ToLower();
+              Console.Clear();
+              if (finalAns == "no" || finalAns == "n")
+              {
+                done = true;
+              }
             }
             else if (choice == genRAnd)
             {
               Console.WriteLine("My choice was PAPER, also");
               Console.WriteLine("We tied!" + player);
               tieGame++;
+              Console.WriteLine(player + ": " + playerScore);
+              Console.WriteLine(compScore + ": " + compScore);
+              Console.WriteLine("Ties : " + tieGame);
+              Console.WriteLine("Would you like to play again?");
+              string finalAns = Console.ReadLine().ToLower();
+              Console.Clear();
+              if (finalAns == "no" || finalAns == "n")
+              {
+                done = true;
+              }
             }
             else
             {
               Console.WriteLine("My choice was SCISSORS, I win");
               Console.WriteLine("Better luck next time!" + player);
               compScore++;
+              Console.WriteLine(player + ": " + playerScore);
+              Console.WriteLine(compScore + ": " + compScore);
+              Console.WriteLine("Ties : " + tieGame);
+              Console.WriteLine("Would you like to play again?");
+              string finalAns = Console.ReadLine().ToLower();
+              Console.Clear();
+              if (finalAns == "no" || finalAns == "n")
+              {
+                done = true;
+              }
             }
 
           }
@@ -92,18 +154,48 @@ namespace rockpaperscissors_csharp
               Console.WriteLine("My choice was PAPER");
               Console.WriteLine("You Win! Good Job " + player);
               playerScore++;
+              Console.WriteLine(player + ": " + playerScore);
+              Console.WriteLine(compScore + ": " + compScore);
+              Console.WriteLine("Ties : " + tieGame);
+              Console.WriteLine("Would you like to play again?");
+              string finalAns = Console.ReadLine().ToLower();
+              Console.Clear();
+              if (finalAns == "no" || finalAns == "n")
+              {
+                done = true;
+              }
             }
             else if (choice == genRAnd)
             {
               Console.WriteLine("My choice was SCISSORS, also");
               Console.WriteLine("We tied!" + player);
               tieGame++;
+              Console.WriteLine(player + ": " + playerScore);
+              Console.WriteLine(compScore + ": " + compScore);
+              Console.WriteLine("Ties : " + tieGame);
+              Console.WriteLine("Would you like to play again?");
+              string finalAns = Console.ReadLine().ToLower();
+              Console.Clear();
+              if (finalAns == "no" || finalAns == "n")
+              {
+                done = true;
+              }
             }
             else
             {
               Console.WriteLine("My choice was ROCK, I win");
               Console.WriteLine("Better luck next time!" + player);
               compScore++;
+              Console.WriteLine(player + ": " + playerScore);
+              Console.WriteLine(compScore + ": " + compScore);
+              Console.WriteLine("Ties : " + tieGame);
+              Console.WriteLine("Would you like to play again?");
+              string finalAns = Console.ReadLine().ToLower();
+              Console.Clear();
+              if (finalAns == "no" || finalAns == "n")
+              {
+                done = true;
+              }
             }
 
           }
@@ -111,16 +203,7 @@ namespace rockpaperscissors_csharp
           {
             Console.WriteLine("Please make a proper SELECTION... " + player.ToUpper());
           }
-          Console.WriteLine(player + ": " + playerScore);
-          Console.WriteLine(compScore + ": " + compScore);
-          Console.WriteLine("Ties : " + tieGame);
-          Console.WriteLine("Would you like to play again?");
-          string finalAns = Console.ReadLine().ToLower();
-          Console.Clear();
-          if (finalAns == "no" || finalAns == "n")
-          {
-            done = true;
-          }
+
         }
         if (start == "no" || start == "n")
         {
